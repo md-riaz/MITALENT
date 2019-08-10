@@ -633,6 +633,10 @@ footer {
     font-family: "Nunito", sans-serif;
 }
 
+.nav__links a:hover {
+    background-color: cadetblue;
+}
+
 .nav__links .close__btn {
     position: absolute;
     top: 0;
