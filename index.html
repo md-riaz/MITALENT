@@ -17,9 +17,9 @@
     <div class="wrapper">
         <section id="header">
             <div class="top-bg"></div>
-            <header>
-                <div class="nav">
-                    <span><i class="fas fa-bars"></i></span>
+            <header class="flex-row">
+                <div class="nav flex-row">
+                    <span class="menubar"><i class="fas fa-bars"></i></span>
                     <div class="link">
                         <a href="#">Clients</a>
                         <a href="#">News</a>
@@ -30,8 +30,8 @@
                 </div>
                 <div class="search__icon"><i class="fas fa-search"></i></div>
             </header>
-            <div class="header__content">
-                <div class="l__side">
+            <div class="header__content flex-row">
+                <div class="l__side flex-row">
                     <div class="side">
                         <div class="social">
                             <i class="fab fa-facebook-square"></i>
@@ -50,12 +50,12 @@
                             <h4>young model 2020</h4>
                         </div>
                     </div>
-                    <div class="btn">
-                        <a href="" class="btn__profile">VIEW PROFILE</a>
-                        <a href="" class="btn__video"><i class="fas fa-play"></i></a>
+                    <div class="btn flex-row">
+                        <a href="#" class="btn__profile">VIEW PROFILE</a>
+                        <a href="#" class="btn__video"><i class="fas fa-play"></i></a>
                     </div>
                 </div>
-                <div class="r__side">
+                <div class="r__side flex-row">
                     <div class="pegination">
                         <span class="one">01</span>
                         <span class="two">02</span>
@@ -73,7 +73,7 @@
                     <button class="btn__tab">Comedian</button>
                     <button class="btn__tab">Model</button>
                 </div>
-                <div class="grid">
+                <div class="grid flex-row">
                     <div class="grid__img">
                         <img src="img/img_grid/gallery_1.jpg" alt="">
                         <div class="details">
@@ -162,7 +162,7 @@
             <div class="container">
                 <h2>latest news</h2>
 
-                <div class="small__news">
+                <div class="small__news flex-row">
 
                     <div class="news">
                         <img src="img/small_news/small_news_img_1.jpg" alt="">
@@ -189,9 +189,9 @@
                     </div>
 
                 </div>
-                <div class="Big_news">
+                <div class="Big_news flex-row">
                     <div class="Big_news__L">
-                        <div class="feature__news">
+                        <div class="feature__news flex-row">
                             <div class="video__img">
                                 <div class="video__img_icon"><i class="fas fa-play"></i></div>
                                 <h4>Use Your Reset Button To Change Your Vibration</h4>
@@ -201,16 +201,18 @@
                                 <img src="img/Big_news/featured_img.jpg" alt="">
                             </div>
                         </div>
-                        <div class="news">
-                            <img src="img/Big_news/L_side_news.jpg" alt="">
-                            <div class="news__details">
-                                <h4 class="title">Dream Interpretation Common Symbols And Their Meanings</h4>
-                                <p class="date">8 March, 2020</p>
+                        <div class="newses flex-row">
+                            <div class="news">
+                                <img src="img/Big_news/L_side_news.jpg" alt="">
+                                <div class="news__details">
+                                    <h4 class="title">Dream Interpretation Common Symbols And Their Meanings</h4>
+                                    <p class="date">8 March, 2020</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="video">
-                            <img src="img/Big_news/news_video.jpg" alt="">
-                            <div class="play__icon"><i class="fas fa-play"></i></div>
+                            <div class="video">
+                                <img src="img/Big_news/news_video.jpg" alt="">
+                                <div class="play__icon"><i class="fas fa-play"></i></div>
+                            </div>
                         </div>
                     </div>
                     <div class="Big_news__R">
@@ -224,7 +226,7 @@
             </div>
         </section>
         <footer>
-            <div class="footer_upper">
+            <div class="footer_upper flex-row">
                 <div class="footer__logo">
                     <img src="img/Brand-Logo.png" alt="">
                 </div>
@@ -233,7 +235,7 @@
                     <div class="news_sletter__icon"><i class="far fa-envelope"></i></div>
                 </div>
             </div>
-            <div class="footer_lower">
+            <div class="footer_lower flex-row">
                 <div class="copyright">&copy; 2019 MI Talent. Designed by Tranmautritam for Mass Impression</div>
                 <div class="social">
                     <i class="fab fa-facebook-square"></i>
@@ -243,7 +245,17 @@
                 </div>
             </div>
         </footer>
+        <div class="nav__links">
+            <div class="close__btn"><i class="fab fa-close"></i></div>
+            <a href="#">Client</a>
+            <a href="#">News</a>
+            <a href="#">Single Blog</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
