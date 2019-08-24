@@ -430,6 +430,15 @@ header>div {
     margin-left: 50px;
 }
 
+.Big_news__R_img {
+    background-color: lightskyblue;
+    background-image: url(../img/Big_news/R_side_news.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 860px;
+}
+
 .feature__news {
     padding-bottom: 50px;
 }
@@ -467,10 +476,10 @@ header>div {
     width: 65%;
     height: 520px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
+    background-image: url(../img/Big_news/featured_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
@@ -505,18 +514,24 @@ header>div {
     margin-right: 25px;
 }
 
-.Big_news__L .news>img {
-    width: 100%;
+.Big_news__L .news .news_img {
+    height: 285px;
+    background-image: url(../img/Big_news/L_side_news.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
 }
 
 .Big_news__L .video {
-    background: rgb( 226, 232, 232);
+    background-color: rgb( 226, 232, 232);
+    background-image: url(../img/Big_news/news_video.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: calc(50% - 25px);
     margin-left: 25px;
-    display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -551,19 +566,6 @@ header>div {
     text-align: center;
     line-height: 90px;
     color: #fff;
-}
-
-.big_news_r_inner {
-    max-height: 940px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.big_news_r_inner img {
-    max-width: none;
-    width: 615px;
 }
 
 .Big_news__R>img {
@@ -707,18 +709,6 @@ footer {
         line-height: 70px;
         background: #fff;
     }
-    .big_news_r_inner {
-        max-height: 819px;
-        overflow: hidden;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    .big_news_r_inner img {
-        max-width: none;
-        width: 100%;
-        transform: translateY(-12%);
-    }
 }
 
 @media screen and (max-width: 1586px) {
@@ -777,6 +767,10 @@ footer {
         justify-content: center;
         padding-top: 50px;
         margin-left: 0;
+    }
+    .Big_news__R_img {
+        background-position: 0 -235px;
+        height: 500px;
     }
 }
 
