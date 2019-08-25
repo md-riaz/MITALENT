@@ -1,9 +1,11 @@
+/* Shortcode */
+var query = document.querySelector.bind(document);
 /* 
 variables
 */
-let navBtn = document.querySelector(".nav");
-let closeBtn = document.querySelector(".close__btn")
-let navlinks = document.querySelector(".nav__links");
+let navBtn = query(".nav");
+let closeBtn = query(".close__btn")
+let navlinks = query(".nav__links");
 
 /*
 events
