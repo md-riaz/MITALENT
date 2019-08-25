@@ -381,10 +381,13 @@ header>div {
 }
 
 .small__news .news {
-    width: calc(100% / 3);
-    min-width: 400px;
-    max-height: 140px;
+    width: calc(100% / 3 - 27px);
+    margin-right: 40px;
     display: flex;
+}
+
+.small__news .news:last-child {
+    margin-right: 0;
 }
 
 .small__news .news>img {
@@ -393,7 +396,7 @@ header>div {
 }
 
 .small__news .news__details {
-    margin: 0 40px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -715,8 +718,12 @@ footer {
     .news__details .title {
         font-size: 1.2rem;
     }
+    .small__news .news {
+        margin-right: 20px;
+        width: calc(100% / 3 - 14px);
+    }
     .small__news .news__details {
-        margin: 0 20px;
+        margin-left: 20px;
     }
     .news__details .date {
         font-size: .8rem;
@@ -750,7 +757,14 @@ footer {
         justify-content: center;
     }
     .small__news .news {
+        width: 100%;
         margin: 20px 0;
+    }
+    .news__details .title {
+        font-size: 1.5rem;
+    }
+    .news__details .date {
+        font-size: 1rem;
     }
     .Big_news__L {
         width: 100%;
@@ -769,7 +783,7 @@ footer {
         margin-left: 0;
     }
     .Big_news__R_img {
-        background-position: 0 -235px;
+        background-position: top;
         height: 500px;
     }
 }
@@ -800,13 +814,6 @@ footer {
     }
     #news h2::after {
         left: 44%;
-    }
-    .small__news .news {
-        max-width: 500px;
-        margin: 10px 0;
-    }
-    .small__news .news:last-child {
-        margin-bottom: 20px;
     }
 }
 
@@ -854,7 +861,8 @@ footer {
         overflow: hidden;
         align-items: center;
     }
-    .video__img h4 {
+    .video__img h4,
+    .news__details .title {
         font-size: 1rem;
     }
     .video__img p {
@@ -946,8 +954,7 @@ footer {
         top: 10px;
         right: 10px;
     }
-    .details h4,
-    .news__details .title {
+    .details h4 {
         font-size: 1rem;
     }
     .details p {
@@ -969,9 +976,6 @@ footer {
     #news h2::after {
         left: 45%;
         width: 100px;
-    }
-    .news__details .date {
-        font-size: 0.6rem;
     }
     .small__news .news__details {
         display: flex;
@@ -1007,6 +1011,9 @@ footer {
     }
     .video__img {
         width: 30%;
+    }
+    .feature__news_img {
+        width: 70%;
     }
     .feature__news_img::after {
         width: 106px;
