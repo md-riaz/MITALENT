@@ -25,7 +25,7 @@ img {
 }
 
 .container {
-    max-width: 1680px;
+    max-width: 1685px;
     width: 90%;
     margin: auto;
     padding-bottom: 100px;
@@ -421,15 +421,15 @@ header>div {
     font-weight: 400;
     font-size: 1rem;
     color: rgb( 119, 119, 126);
-    margin-bottom: 0;
+    margin-bottom: 0;    margin-top: 30px;
 }
 
 .Big_news__L {
-    width: 60%;
+    width: 65.2%;
 }
 
 .Big_news__R {
-    width: calc(40% - 50px);
+    width: calc(34.8% - 50px);
     margin-left: 50px;
 }
 
@@ -447,7 +447,8 @@ header>div {
 }
 
 .video__img {
-    background: linear-gradient( 86deg, rgb(180, 211, 211) 0%, rgb(217, 231, 231) 100%);
+    background: rgb(180,211,211);
+background: linear-gradient(0deg, rgba(180,211,211,1) 0%, rgba(217,231,231,1) 100%);
     max-height: 520px;
     width: 35%;
     padding: 0 60px;
@@ -530,9 +531,10 @@ header>div {
     background-color: rgb( 226, 232, 232);
     background-image: url(../img/Big_news/news_video.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: calc(50% - 25px);
+    height: 425px;
     margin-left: 25px;
     position: relative;
     overflow: hidden;
@@ -577,21 +579,21 @@ header>div {
 
 footer {
     width: 100%;
-    max-height: 220px
 }
 
 .footer_upper {
-    padding: 50px 60px;
+    padding: 30px 60px;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
     border-bottom: 2px solid rgb( 245, 245, 245);
 }
 
 .footer_upper .footer__logo {
     max-width: 200px;
 }
-
+.footer_upper .footer__logo img {
+    vertical-align: middle;
+}
 .footer_upper .news_sletter {
     font-size: 0.9rem;
     font-weight: 700;
@@ -600,9 +602,10 @@ footer {
     position: relative;
 }
 
-.news_sletter>h5,
-.news_sletter__icon {
+.news_sletter>h5, .news_sletter__icon {
     display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .news_sletter__icon i {
@@ -616,18 +619,17 @@ footer {
     width: 1px;
     height: 40px;
     left: -50px;
-    top: 8px;
+    top: -4px;
 }
 
 .footer_lower {
-    padding: 50px 60px;
+    padding: 40px 60px;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
 }
 
 .footer_lower .social i {
-    margin: 20px;
+    margin: 2px 20px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -1094,5 +1096,8 @@ footer {
     }
     .news_sletter__icon i {
         margin-left: 10px;
+    }
+    .footer_lower {
+        display: block;    padding: 15px 30px;
     }
 }
