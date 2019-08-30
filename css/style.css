@@ -657,7 +657,7 @@ footer {
 .nav__links {
     position: fixed;
     background: linear-gradient(0deg, rgba(180, 211, 211, 1) 0%, rgba(217, 231, 231, 1) 100%);
-    width: 500px;
+    width: 200px;
     height: 100%;
     top: 0;
     left: -900px;
@@ -678,7 +678,7 @@ footer {
     border-bottom: 1px solid #ffffff;
     text-align: center;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     font-family: "Nunito", sans-serif;
 }
