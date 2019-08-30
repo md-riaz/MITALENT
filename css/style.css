@@ -53,7 +53,6 @@ img {
 }
 
 .link {
-    line-height: 20px;
     height: 20px;
 }
 
@@ -94,7 +93,8 @@ header>div {
 
 .l__side {
     width: 75%;
-    flex-wrap: wrap;position: relative;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .side {
@@ -150,14 +150,13 @@ header>div {
 }
 
 .slide__img {
-    padding-left: 17%;
+    padding-left: 16%;
 }
-
 
 .slide__name {
     position: absolute;
     top: 20%;
-    left: 10.8%;
+    left: 10%;
 }
 
 .slide__name h2 {
@@ -265,6 +264,7 @@ header>div {
     left: 0px;
     animation: act_hover .5s;
 }
+
 @keyframes act_hover {
     0% {
         width: 0%;
@@ -273,6 +273,7 @@ header>div {
         width: 100%;
     }
 }
+
 .grid {
     width: 100%;
     flex-wrap: wrap;
@@ -577,7 +578,7 @@ header>div {
 .video .play__icon i {
     font-size: 2rem;
     text-align: center;
-    line-height: 90px;
+    line-height: 85px;
     color: #fff;
 }
 
@@ -655,7 +656,7 @@ footer {
 
 .nav__links {
     position: fixed;
-    background: #b7d5d5;
+    background: linear-gradient(0deg, rgba(180, 211, 211, 1) 0%, rgba(217, 231, 231, 1) 100%);
     width: 500px;
     height: 100%;
     top: 0;
@@ -673,8 +674,8 @@ footer {
     height: 60px;
     line-height: 60px;
     width: 100%;
-    background-color: rgb( 135, 187, 188);
-    border-bottom: 1px solid #b7d5d5;
+    background-color: rgb( 180, 211, 211);
+    border-bottom: 1px solid #ffffff;
     text-align: center;
     margin: auto;
     font-size: 1.5rem;
@@ -693,7 +694,7 @@ footer {
     width: 60px;
     height: 60px;
     line-height: 50px;
-    background: rgb(217, 231, 231);
+    background: linear-gradient(180deg, rgba(180, 211, 211, 1) 0%, rgba(217, 231, 231, 1) 100%);
     cursor: pointer;
     font-size: 2rem;
     display: flex;
@@ -910,11 +911,13 @@ footer {
         padding: 50px;
     }
 }
+
 @media screen and (max-width: 970px) {
     .grid__img {
         width: calc(100% / 3);
     }
 }
+
 @media screen and (max-width: 950px) {
     header {
         padding: 20px 20px 50px 20px;
@@ -929,7 +932,7 @@ footer {
         margin-left: 20px;
     }
     header>div {
-        min-width: 150px;
+        min-width: 100px;
     }
     .logo {
         max-width: 100px;
@@ -1025,7 +1028,6 @@ footer {
     }
 }
 
-
 @media screen and (max-width: 800px) {
     .r__side {
         padding: 10px 30px;
@@ -1051,21 +1053,12 @@ footer {
         top: 5px;
         right: 5px;
     }
-    .video .play__icon {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        top: 70%;
-    }
     .video .play__icon::before {
         font-size: 0.8rem;
-        left: 61%;
-    }
-    .video .play__icon i {
-        font-size: 1rem;
-        line-height: 50px;
+        left: 85%;
     }
 }
+
 @media screen and (max-width: 767px) {
     .l__side {
         width: 100%;
@@ -1080,7 +1073,8 @@ footer {
     .slide {
         position: relative;
         width: 100%;
-    }.slide__img {
+    }
+    .slide__img {
         padding-left: 0;
     }
     .slide__name {
@@ -1095,33 +1089,38 @@ footer {
     a.btn__profile {
         margin-left: 25px;
     }
-    .slide__number,.r__side, .side {
+    .slide__number,
+    .r__side,
+    .side {
         display: none;
     }
-
-
-
-    .Big_news__L .news, .Big_news__L .video{
+    .Big_news__L .news,
+    .Big_news__L .video {
         width: 100%;
         margin: 0;
-    }.Big_news__L .news .news_img {
+    }
+    .Big_news__L .news .news_img {
         height: 350px;
-    }.Big_news__L .video{
+    }
+    .Big_news__L .video {
         margin-top: 10px;
     }
     .grid__img {
-            width: calc(100% / 2);
-        }
+        width: calc(100% / 2);
+    }
 }
-@media screen and (max-width: 700px) {
- 
 
-    
+@media screen and (max-width: 700px) {
     .btn__tab {
         width: 100px;
     }
     .btn__tab.active::after {
         width: 100px;
+    }
+    .video__img,
+    .feature__news_img {
+        width: 100%;
+        height: 300px;
     }
     .footer_lower .social i {
         margin: 10px;
@@ -1134,6 +1133,12 @@ footer {
 @media screen and (max-width: 600px) {
     #header {
         margin-bottom: 50px;
+    }
+    .link {
+        display: none;
+    }
+    .btn {
+        top: 84%;
     }
     a.btn__profile {
         width: 80px;
@@ -1162,5 +1167,12 @@ footer {
     .footer_lower {
         display: block;
         padding: 15px 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .news_sletter::before {
+        left: -30px;
+        top: -5px;
     }
 }
