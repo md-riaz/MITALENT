@@ -647,7 +647,9 @@ footer {
 }
 
 .social i:hover {
-    color: #b7d5d5;
+    background: linear-gradient(45deg, rgba(180, 211, 211, 1) 0%, rgba(217, 231, 231, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav__links {
