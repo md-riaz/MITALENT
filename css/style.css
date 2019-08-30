@@ -254,24 +254,19 @@ header>div {
     position: relative;
 }
 
-.btn__tab.active::after {
+.btn__tab::after {
     content: '';
     position: absolute;
     background: #000;
-    width: 142px;
+    width: 0;
     height: 3px;
     bottom: 0;
     left: 0px;
-    animation: act_hover .5s;
+    transition: width .5s;
 }
 
-@keyframes act_hover {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
+.btn__tab.active::after {
+    width: 100%;
 }
 
 .grid {
@@ -375,7 +370,8 @@ header>div {
     width: 150px;
     height: 2px;
     bottom: 0;
-    left: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #news .small__news {
@@ -839,9 +835,6 @@ footer {
         width: 160px;
         font-size: .8rem;
     }
-    #news h2::after {
-        left: 44%;
-    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -866,9 +859,6 @@ footer {
     }
     .btn__grp {
         margin-bottom: 50px;
-    }
-    #news h2::after {
-        left: 42%;
     }
     #news h2 {
         font-size: 2.75rem;
@@ -1008,7 +998,6 @@ footer {
         font-size: 2rem;
     }
     #news h2::after {
-        left: 45%;
         width: 100px;
     }
     .small__news .news__details {
