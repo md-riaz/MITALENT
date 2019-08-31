@@ -4,7 +4,7 @@ var queryAll = document.querySelectorAll.bind(document);
 /* 
 variables
 */
-let navBtn = query(".nav");
+let navBtn = query(".menubar");
 let closeBtn = query(".close__btn")
 let navlinks = query(".nav__links");
 let btn_tabs = queryAll(".btn__tab");
